@@ -423,3 +423,12 @@ textarea { min-height: 140px; resize: vertical; }
   html { scroll-behavior: auto; }
   * { transition: none !important; animation: none !important; }
 }
+
+/* Telefonda tek başına duran yazı linklerinin dokunma alanı en az 24px (WCAG 2.5.8) */
+.footer-inner ul a,
+.contact-list a,
+.tool-back a {
+  display: inline-block;
+  padding: 8px 0;
+  min-height: 24px;
+}
