@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ana Sayfa | Alimert Polat</title>
+  <meta name="description" content="Alimert Polat – Dijital Oyun Tasarımı öğrencisi. Projeler, oyunlar ve araçlar.">
+  <link rel="icon" href="img/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">alimert<span>.dev</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Ana Sayfa</a></li>
+          <li><a href="hakkimda.html">Hakkımda</a></li>
+          <li><a href="projeler.html">Projeler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Açık temaya geç" hidden>☀</button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <div class="container">
+      <section class="hero" aria-labelledby="hero-baslik">
+        <div>
+          <p class="eyebrow">&gt; Merhaba, ben</p>
+          <h1 id="hero-baslik">Alimert Polat</h1>
+          <p class="lead">Bahçeşehir Üniversitesi Dijital Oyun Tasarımı öğrencisiyim. Unity ve Unreal Engine ile oyun geliştiriyor, game jam'lere katılıyor ve oyun ekiplerinin işini kolaylaştıran küçük araçlar yazıyorum.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projeler.html">Projelerime göz at</a>
+            <a class="btn btn-ghost" href="iletisim.html">İletişime geç</a>
+          </div>
+        </div>
+        <img class="hero-avatar" src="img/avatar.svg" alt="Alimert Polat'ı temsil eden, camgöbeği tişörtlü piksel sanatı karakter" width="320" height="320">
+      </section>
+
+      <section class="section" aria-labelledby="neler-baslik">
+        <h2 id="neler-baslik">Neler yapıyorum?</h2>
+        <div class="grid">
+          <article class="card">
+            <p class="card-icon" aria-hidden="true">[▶]</p>
+            <h3>Oyun geliştirme</h3>
+            <p>Unity ve Unreal Engine ile prototipler ve game jam oyunları geliştiriyorum. Bitirme projemde ekip arkadaşlarımla bir co-op oyun üzerinde çalışıyorum.</p>
+          </article>
+          <article class="card">
+            <p class="card-icon" aria-hidden="true">&gt;_</p>
+            <h3>Python ile araçlar</h3>
+            <p>Tekrar eden işleri otomatikleştiren komut satırı araçları yazıyorum. Örneğin playtest geri bildirimlerini analiz eden bir uygulama.</p>
+          </article>
+          <article class="card">
+            <p class="card-icon" aria-hidden="true">&lt;/&gt;</p>
+            <h3>Web</h3>
+            <p>HTML, CSS ve JavaScript ile bu site ve tarayıcıda çalışan küçük oyun tasarım araçları.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="son-baslik">
+        <h2 id="son-baslik">Öne çıkan proje</h2>
+        <article class="card project-card" style="max-width:560px">
+          <img src="img/proje-playtest.svg" alt="Terminal penceresinde Eğlence, Zorluk ve Kontrol puanlarını gösteren çubuk grafik" width="640" height="360">
+          <div class="project-body">
+            <h3>Playtest Geri Bildirim Analizcisi</h3>
+            <p>Oyuncu puanlarından ortalama, en zayıf alan ve öneri çıkaran Python uygulaması.</p>
+            <div class="project-links">
+              <a class="btn btn-ghost" href="projeler.html">Tüm projeler</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Alimert Polat · GEP1316 Kodlama Okuryazarlığı</p>
+      <ul>
+        <li><a href="https://github.com/almpolat">GitHub</a></li>
+        <li><a href="mailto:alimert.polat@bahcesehir.edu.tr">E-posta</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

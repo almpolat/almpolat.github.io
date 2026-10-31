@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Jam Geri Sayım | Alimert Polat</title>
+  <meta name="description" content="Game jam süresi için geri sayım sayacı.">
+  <link rel="icon" href="../img/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">alimert<span>.dev</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <ul class="nav-list">
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="../hakkimda.html">Hakkımda</a></li>
+          <li><a href="../projeler.html">Projeler</a></li>
+          <li><a href="../iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Açık temaya geç" hidden>☀</button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <div class="container">
+      <p><a href="../projeler.html">&larr; Projelere dön</a></p>
+      <section class="card tool-box" aria-labelledby="t-baslik">
+        <h1 id="t-baslik">Game Jam Geri Sayım</h1>
+        <p>Jam süresini saat olarak gir ve başlat. Kalan süre her saniye güncellenir.</p>
+        <form class="inline-form" id="sayac-formu" novalidate>
+          <div class="form-group">
+            <label for="saat">Süre (saat, 1-72)</label>
+            <input type="number" id="saat" min="1" max="72" value="48" aria-describedby="sayac-hata">
+          </div>
+          <button class="btn btn-primary" type="submit" id="baslat-btn">Başlat</button>
+          <button class="btn btn-ghost" type="button" id="durdur-btn" disabled>Durdur</button>
+        </form>
+        <p class="error-msg" id="sayac-hata"></p>
+        <p class="big-output" id="kalan" role="timer" aria-live="off">00:00:00</p>
+        <p id="sayac-durum" aria-live="polite"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Alimert Polat · GEP1316 Kodlama Okuryazarlığı</p>
+      <ul>
+        <li><a href="https://github.com/almpolat">GitHub</a></li>
+        <li><a href="mailto:alimert.polat@bahcesehir.edu.tr">E-posta</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="geri-sayim.js"></script>
+</body>
+</html>

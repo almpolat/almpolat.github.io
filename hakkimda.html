@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hakkımda | Alimert Polat</title>
+  <meta name="description" content="Alimert Polat'ın eğitimi, ilgi alanları ve kodlama ile yapay zekânın mesleğindeki yeri.">
+  <link rel="icon" href="img/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">alimert<span>.dev</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <ul class="nav-list">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hakkimda.html" aria-current="page">Hakkımda</a></li>
+          <li><a href="projeler.html">Projeler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Açık temaya geç" hidden>☀</button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <div class="container">
+      <h1>Hakkımda</h1>
+      <div class="about-grid">
+        <div>
+          <section class="section" aria-labelledby="egitim-baslik">
+            <h2 id="egitim-baslik">Eğitim</h2>
+            <ul class="timeline">
+              <li>
+                <h3>Bahçeşehir Üniversitesi</h3>
+                <p>Dijital Oyun Tasarımı (lisans). Oyun tasarımı, oyun motorları ve etkileşimli medya üzerine eğitim alıyorum.</p>
+              </li>
+              <li>
+                <h3>Bitirme projesi</h3>
+                <p>Unreal Engine 5 ile ekip olarak geliştirdiğimiz co-op bir hayatta kalma oyunu.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="section" aria-labelledby="yz-baslik">
+            <h2 id="yz-baslik">Kodlama ve YZ'nin mesleğimdeki yeri</h2>
+            <p>Bölüme başladığımda kodlama benim için yalnızca oyun yapmanın bir aracıydı: bir karakteri hareket ettirmek, bir mekaniği çalıştırmak. Bugün ise kodlamayı oyunun yanında para kazandırabilen, iş hayatında tekrar eden işleri otomatikleştiren bir beceri olarak görüyorum. Bir oyun ekibinde playtest notlarını toplamak, test sonuçlarını analiz etmek ya da prototip araçları hazırlamak gibi işler kod bilen biri için dakikalara iniyor.</p>
+            <p>Yapay zekâ bu süreci benim için çok kolaylaştırdı. Gereksinimleri parçalara ayırmak, kod taslağı üretmek ve hata ayıklamak çok daha hızlı. Ama YZ'nin yazdığı kodun da hata içerebildiğini gördüm. Bu yüzden onu bir "yardımcı geliştirici" gibi kullanıyorum: ne istediğimi açıkça söylüyorum, seçenekler arasından karar veriyorum ve sonucu mutlaka test ediyorum.</p>
+          </section>
+        </div>
+
+        <aside class="card" aria-labelledby="ilgi-baslik">
+          <h2 id="ilgi-baslik">İlgi alanları</h2>
+          <ul class="skill-list">
+            <li>Unity</li>
+            <li>Unreal Engine 5</li>
+            <li>Game jam'ler</li>
+            <li>Oyun tasarımı</li>
+            <li>Python</li>
+            <li>HTML / CSS / JS</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Alimert Polat · GEP1316 Kodlama Okuryazarlığı</p>
+      <ul>
+        <li><a href="https://github.com/almpolat">GitHub</a></li>
+        <li><a href="mailto:alimert.polat@bahcesehir.edu.tr">E-posta</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

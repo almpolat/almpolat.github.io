@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeler | Alimert Polat</title>
+  <meta name="description" content="Alimert Polat'ın Python ve web projeleri: playtest analizcisi ve oyun tasarım araçları.">
+  <link rel="icon" href="img/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">alimert<span>.dev</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <ul class="nav-list">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hakkimda.html">Hakkımda</a></li>
+          <li><a href="projeler.html" aria-current="page">Projeler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Açık temaya geç" hidden>☀</button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <div class="container">
+      <h1>Projeler</h1>
+      <p class="lead">Kodlama Okuryazarlığı dersinde geliştirdiğim Python uygulaması ve tarayıcıda çalışan oyun tasarım araçları.</p>
+
+      <div class="toolbar">
+        <div class="filter-group" role="group" aria-label="Projeleri filtrele" hidden>
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">Tümü</button>
+          <button class="filter-btn" type="button" data-filter="python" aria-pressed="false">Python</button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+        </div>
+        <div class="search-box" hidden>
+          <label for="proje-ara" class="visually-hidden">Projelerde ara</label>
+          <input type="search" id="proje-ara" placeholder="Projelerde ara...">
+        </div>
+      </div>
+      <p class="visually-hidden" id="sonuc-durumu" aria-live="polite"></p>
+
+      <div class="grid" id="proje-listesi">
+          <article class="card project-card" data-category="python">
+            <img src="img/proje-playtest.svg" alt="Terminal penceresinde Eğlence, Zorluk ve Kontrol puanlarını gösteren çubuk grafik" width="640" height="360" loading="lazy">
+            <div class="project-body">
+              <h3>Playtest Geri Bildirim Analizcisi</h3>
+              <ul class="tags" aria-label="Kullanılan teknolojiler"><li class="tag">Python</li><li class="tag">CSV</li><li class="tag">Girdi doğrulama</li></ul>
+              <p>Playtest oturumunda oyunculardan alınan puanların ortalamasını, en zayıf alanı ve ekibe öneriyi hesaplayan, sonucu CSV'ye kaydeden komut satırı uygulaması.</p>
+              <p class="learned"><strong>Ne öğrendim:</strong> Program hata vermeden çalışıyor diye doğru çalıştığını varsaymamayı; eşit puanlar gibi uç durumları test etmeyi öğrendim.</p>
+              <div class="project-links"><a class="btn btn-ghost" href="https://github.com/almpolat/playtest-analizci">GitHub<span class="visually-hidden">: Playtest Geri Bildirim Analizcisi kaynak kodu</span></a></div>
+            </div>
+          </article>
+          <article class="card project-card" data-category="web">
+            <img src="img/proje-fikir.svg" alt="Ampul ve altında Tür, Mekanik, Tema yazan üç renkli kart" width="640" height="360" loading="lazy">
+            <div class="project-body">
+              <h3>Oyun Fikri Üreteci</h3>
+              <ul class="tags" aria-label="Kullanılan teknolojiler"><li class="tag">JavaScript</li><li class="tag">Diziler</li><li class="tag">Math.random</li></ul>
+              <p>Rastgele bir tür, mekanik ve tema birleştirerek game jam beyin fırtınası için oyun fikri üreten araç.</p>
+              <p class="learned"><strong>Ne öğrendim:</strong> Dizilerden rastgele eleman seçmeyi ve sonucu ekran okuyucuların da duyacağı şekilde sayfaya yazmayı öğrendim.</p>
+              <div class="project-links"><a class="btn btn-primary" href="projeler/oyun-fikri.html">Dene</a><a class="btn btn-ghost" href="https://github.com/almpolat/almpolat.github.io/blob/main/projeler/oyun-fikri.html">GitHub<span class="visually-hidden">: Oyun Fikri Üreteci kaynak kodu</span></a></div>
+            </div>
+          </article>
+          <article class="card project-card" data-category="web">
+            <img src="img/proje-zar.svg" alt="Biri beyaz biri camgöbeği iki zar ve üzerinde 20 yazan mor bir d20 zarı" width="640" height="360" loading="lazy">
+            <div class="project-body">
+              <h3>Zar Atıcı</h3>
+              <ul class="tags" aria-label="Kullanılan teknolojiler"><li class="tag">JavaScript</li><li class="tag">Döngüler</li><li class="tag">Form</li></ul>
+              <p>Masa oyunu prototipleri için d4'ten d20'ye kadar istenen sayıda zar atıp toplamı gösteren araç.</p>
+              <p class="learned"><strong>Ne öğrendim:</strong> Bir döngüyle birden fazla rastgele sayı üretmeyi ve kullanıcı girdisini sınırlar içinde tutmayı öğrendim.</p>
+              <div class="project-links"><a class="btn btn-primary" href="projeler/zar.html">Dene</a><a class="btn btn-ghost" href="https://github.com/almpolat/almpolat.github.io/blob/main/projeler/zar.html">GitHub<span class="visually-hidden">: Zar Atıcı kaynak kodu</span></a></div>
+            </div>
+          </article>
+          <article class="card project-card" data-category="web">
+            <img src="img/proje-sayac.svg" alt="Kum saati ve yanında 47:59 gösteren dijital sayaç" width="640" height="360" loading="lazy">
+            <div class="project-body">
+              <h3>Game Jam Geri Sayım</h3>
+              <ul class="tags" aria-label="Kullanılan teknolojiler"><li class="tag">JavaScript</li><li class="tag">setInterval</li><li class="tag">Zaman</li></ul>
+              <p>Jam süresini girince kalan zamanı saat, dakika ve saniye olarak gösteren, süre bitince uyarı veren sayaç.</p>
+              <p class="learned"><strong>Ne öğrendim:</strong> Zamanlayıcılarla çalışmayı ve saniyeyi saat:dakika:saniye biçimine çevirmeyi öğrendim.</p>
+              <div class="project-links"><a class="btn btn-primary" href="projeler/geri-sayim.html">Dene</a><a class="btn btn-ghost" href="https://github.com/almpolat/almpolat.github.io/blob/main/projeler/geri-sayim.html">GitHub<span class="visually-hidden">: Game Jam Geri Sayım kaynak kodu</span></a></div>
+            </div>
+          </article>
+      </div>
+      <p class="empty-msg" id="bos-mesaj" hidden>Aramanıza uyan proje bulunamadı.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Alimert Polat · GEP1316 Kodlama Okuryazarlığı</p>
+      <ul>
+        <li><a href="https://github.com/almpolat">GitHub</a></li>
+        <li><a href="mailto:alimert.polat@bahcesehir.edu.tr">E-posta</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İletişim | Alimert Polat</title>
+  <meta name="description" content="Alimert Polat ile iletişim: form, GitHub ve e-posta.">
+  <link rel="icon" href="img/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">alimert<span>.dev</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <ul class="nav-list">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hakkimda.html">Hakkımda</a></li>
+          <li><a href="projeler.html">Projeler</a></li>
+          <li><a href="iletisim.html" aria-current="page">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Açık temaya geç" hidden>☀</button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <div class="container">
+      <h1>İletişim</h1>
+      <div class="contact-grid">
+        <section class="card" aria-labelledby="form-baslik">
+          <h2 id="form-baslik">Mesaj gönder</h2>
+          <form id="iletisim-formu" novalidate>
+            <div class="form-group">
+              <label for="ad">Adınız</label>
+              <input type="text" id="ad" name="ad" autocomplete="name" maxlength="50" required aria-describedby="ad-hata">
+              <p class="error-msg" id="ad-hata"></p>
+            </div>
+            <div class="form-group">
+              <label for="eposta">E-posta adresiniz</label>
+              <input type="email" id="eposta" name="eposta" autocomplete="email" maxlength="100" required aria-describedby="eposta-hata">
+              <p class="error-msg" id="eposta-hata"></p>
+            </div>
+            <div class="form-group">
+              <label for="mesaj">Mesajınız</label>
+              <textarea id="mesaj" name="mesaj" maxlength="500" required aria-describedby="mesaj-hata mesaj-sayac"></textarea>
+              <p class="char-count" id="mesaj-sayac">0 / 500</p>
+              <p class="error-msg" id="mesaj-hata"></p>
+            </div>
+            <button class="btn btn-primary" type="submit">Gönder</button>
+            <div class="form-status" id="form-durumu" role="status" aria-live="polite"></div>
+          </form>
+          <p class="privacy-note"><strong>Gizlilik:</strong> Bu form yalnızca girdiğiniz bilgilerin doğruluğunu tarayıcınızda kontrol eder; bilgileriniz hiçbir sunucuya gönderilmez, kaydedilmez ve üçüncü taraflarla paylaşılmaz. Sitede çerez, analiz veya izleme betiği kullanılmamaktadır. Yalnızca tema tercihiniz (açık/koyu) tarayıcınızda saklanır. Bana ulaşmak için yandaki e-posta adresini kullanabilirsiniz.</p>
+        </section>
+
+        <aside aria-labelledby="baglanti-baslik">
+          <h2 id="baglanti-baslik">Bağlantılar</h2>
+          <ul class="contact-list">
+            <li><strong>E-posta:</strong> <a href="mailto:alimert.polat@bahcesehir.edu.tr">alimert.polat@bahcesehir.edu.tr</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/almpolat">github.com/almpolat</a></li>
+          </ul>
+          <p class="empty-msg">Game jam ekibi, staj ya da proje iş birliği için yazabilirsiniz.</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Alimert Polat · GEP1316 Kodlama Okuryazarlığı</p>
+      <ul>
+        <li><a href="https://github.com/almpolat">GitHub</a></li>
+        <li><a href="mailto:alimert.polat@bahcesehir.edu.tr">E-posta</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

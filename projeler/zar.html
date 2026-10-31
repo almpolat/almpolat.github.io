@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zar Atıcı | Alimert Polat</title>
+  <meta name="description" content="Masa oyunu prototipleri için zar atıcı.">
+  <link rel="icon" href="../img/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">alimert<span>.dev</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <ul class="nav-list">
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="../hakkimda.html">Hakkımda</a></li>
+          <li><a href="../projeler.html">Projeler</a></li>
+          <li><a href="../iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Açık temaya geç" hidden>☀</button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="site-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <div class="container">
+      <p><a href="../projeler.html">&larr; Projelere dön</a></p>
+      <section class="card tool-box" aria-labelledby="t-baslik">
+        <h1 id="t-baslik">Zar Atıcı</h1>
+        <p>Zar türünü ve sayısını seç, at. Masa oyunu prototiplerini hızlıca test etmek için.</p>
+        <form class="inline-form" id="zar-formu" novalidate>
+          <div class="form-group">
+            <label for="zar-adet">Zar sayısı (1-10)</label>
+            <input type="number" id="zar-adet" min="1" max="10" value="2" aria-describedby="zar-hata">
+          </div>
+          <div class="form-group">
+            <label for="zar-tur">Zar türü</label>
+            <select id="zar-tur">
+              <option value="4">d4</option>
+              <option value="6" selected>d6</option>
+              <option value="8">d8</option>
+              <option value="10">d10</option>
+              <option value="12">d12</option>
+              <option value="20">d20</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">At</button>
+        </form>
+        <p class="error-msg" id="zar-hata"></p>
+        <p class="big-output" id="zar-sonuc" aria-live="polite">—</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Alimert Polat · GEP1316 Kodlama Okuryazarlığı</p>
+      <ul>
+        <li><a href="https://github.com/almpolat">GitHub</a></li>
+        <li><a href="mailto:alimert.polat@bahcesehir.edu.tr">E-posta</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="zar.js"></script>
+</body>
+</html>
