@@ -40,7 +40,12 @@
     }
   }
 
-  temaUygula(temaOku() || "dark");
+  // Kayıtlı tercih yoksa ziyaretçinin sistem temasına uyulur
+  function sistemTemasi() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  }
+
+  temaUygula(temaOku() || sistemTemasi());
 
   const temaBtn = document.querySelector(".theme-toggle");
   if (temaBtn) {
