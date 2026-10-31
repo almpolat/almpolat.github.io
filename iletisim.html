@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>İletişim | Alimert Polat</title>
-  <meta name="description" content="Alimert Polat ile iletişim: form, GitHub ve e-posta.">
+  <meta name="description" content="Alimert Polat ile iletişim: form ve GitHub.">
+  <!-- Güvenlik: sadece bu siteden gelen script, stil ve görsellere izin verilir; form hiçbir yere gönderilemez -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; form-action 'none'; base-uri 'self'; object-src 'none'">
   <link rel="icon" href="img/avatar.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -55,13 +57,12 @@
             <button class="btn btn-primary" type="submit">Gönder</button>
             <div class="form-status" id="form-durumu" role="status" aria-live="polite"></div>
           </form>
-          <p class="privacy-note"><strong>Gizlilik:</strong> Bu form yalnızca girdiğiniz bilgilerin doğruluğunu tarayıcınızda kontrol eder; bilgileriniz hiçbir sunucuya gönderilmez, kaydedilmez ve üçüncü taraflarla paylaşılmaz. Sitede çerez, analiz veya izleme betiği kullanılmamaktadır. Yalnızca tema tercihiniz (açık/koyu) tarayıcınızda saklanır. Bana ulaşmak için yandaki e-posta adresini kullanabilirsiniz.</p>
+          <p class="privacy-note"><strong>Gizlilik:</strong> Bu form yalnızca girdiğiniz bilgilerin doğruluğunu tarayıcınızda kontrol eder; bilgileriniz hiçbir sunucuya gönderilmez, kaydedilmez ve üçüncü taraflarla paylaşılmaz. Sitede çerez, analiz veya izleme betiği kullanılmamaktadır. Yalnızca tema tercihiniz (açık/koyu) tarayıcınızda saklanır. Kişisel iletişim bilgilerim (e-posta, telefon, adres) spam ve gizlilik nedeniyle sitede yayımlanmamıştır; bana GitHub üzerinden ulaşabilirsiniz.</p>
         </section>
 
         <aside aria-labelledby="baglanti-baslik">
           <h2 id="baglanti-baslik">Bağlantılar</h2>
           <ul class="contact-list">
-            <li><strong>E-posta:</strong> <a href="mailto:alimert.polat@bahcesehir.edu.tr">alimert.polat@bahcesehir.edu.tr</a></li>
             <li><strong>GitHub:</strong> <a href="https://github.com/almpolat">github.com/almpolat</a></li>
           </ul>
           <p class="empty-msg">Game jam ekibi, staj ya da proje iş birliği için yazabilirsiniz.</p>
@@ -75,7 +76,6 @@
       <p>© 2026 Alimert Polat · GEP1316 Kodlama Okuryazarlığı</p>
       <ul>
         <li><a href="https://github.com/almpolat">GitHub</a></li>
-        <li><a href="mailto:alimert.polat@bahcesehir.edu.tr">E-posta</a></li>
       </ul>
     </div>
   </footer>

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ana Sayfa | Alimert Polat</title>
   <meta name="description" content="Alimert Polat – Dijital Oyun Tasarımı öğrencisi. Projeler, oyunlar ve araçlar.">
+  <!-- Güvenlik: sadece bu siteden gelen script, stil ve görsellere izin verilir; form hiçbir yere gönderilemez -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; form-action 'none'; base-uri 'self'; object-src 'none'">
   <link rel="icon" href="img/avatar.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -67,7 +69,7 @@
 
       <section class="section" aria-labelledby="son-baslik">
         <h2 id="son-baslik">Öne çıkan proje</h2>
-        <article class="card project-card" style="max-width:560px">
+        <article class="card project-card featured">
           <img src="img/proje-playtest.svg" alt="Terminal penceresinde Eğlence, Zorluk ve Kontrol puanlarını gösteren çubuk grafik" width="640" height="360">
           <div class="project-body">
             <h3>Playtest Geri Bildirim Analizcisi</h3>
@@ -86,7 +88,6 @@
       <p>© 2026 Alimert Polat · GEP1316 Kodlama Okuryazarlığı</p>
       <ul>
         <li><a href="https://github.com/almpolat">GitHub</a></li>
-        <li><a href="mailto:alimert.polat@bahcesehir.edu.tr">E-posta</a></li>
       </ul>
     </div>
   </footer>

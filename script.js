@@ -74,6 +74,9 @@
       menuBtn.setAttribute("aria-expanded", String(acik));
       menuBtn.setAttribute("aria-label", acik ? "Menüyü kapat" : "Menüyü aç");
       menuBtn.textContent = acik ? "✕" : "☰";
+      // DUZELTME: Menü açılınca odak ilk bağlantıya taşınır.
+      // (Önceden Tab menüyü atlayıp sayfa içeriğine geçiyordu.)
+      if (acik) menu.querySelector("a").focus();
     });
 
     // Esc tuşu menüyü kapatır ve odağı düğmeye geri verir

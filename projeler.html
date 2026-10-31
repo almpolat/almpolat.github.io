@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projeler | Alimert Polat</title>
   <meta name="description" content="Alimert Polat'ın Python ve web projeleri: playtest analizcisi ve oyun tasarım araçları.">
+  <!-- Güvenlik: sadece bu siteden gelen script, stil ve görsellere izin verilir; form hiçbir yere gönderilemez -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; form-action 'none'; base-uri 'self'; object-src 'none'">
   <link rel="icon" href="img/avatar.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -46,6 +48,7 @@
         </div>
       </div>
       <p class="visually-hidden" id="sonuc-durumu" aria-live="polite"></p>
+      <h2 class="visually-hidden">Proje listesi</h2>
 
       <div class="grid" id="proje-listesi">
           <article class="card project-card" data-category="python">
@@ -65,7 +68,7 @@
               <ul class="tags" aria-label="Kullanılan teknolojiler"><li class="tag">JavaScript</li><li class="tag">Diziler</li><li class="tag">Math.random</li></ul>
               <p>Rastgele bir tür, mekanik ve tema birleştirerek game jam beyin fırtınası için oyun fikri üreten araç.</p>
               <p class="learned"><strong>Ne öğrendim:</strong> Dizilerden rastgele eleman seçmeyi ve sonucu ekran okuyucuların da duyacağı şekilde sayfaya yazmayı öğrendim.</p>
-              <div class="project-links"><a class="btn btn-primary" href="projeler/oyun-fikri.html">Dene</a><a class="btn btn-ghost" href="https://github.com/almpolat/almpolat.github.io/blob/main/projeler/oyun-fikri.html">GitHub<span class="visually-hidden">: Oyun Fikri Üreteci kaynak kodu</span></a></div>
+              <div class="project-links"><a class="btn btn-primary" href="projeler/oyun-fikri.html">Dene<span class="visually-hidden">: Oyun Fikri Üreteci</span></a><a class="btn btn-ghost" href="https://github.com/almpolat/almpolat.github.io/blob/main/projeler/oyun-fikri.html">GitHub<span class="visually-hidden">: Oyun Fikri Üreteci kaynak kodu</span></a></div>
             </div>
           </article>
           <article class="card project-card" data-category="web">
@@ -75,7 +78,7 @@
               <ul class="tags" aria-label="Kullanılan teknolojiler"><li class="tag">JavaScript</li><li class="tag">Döngüler</li><li class="tag">Form</li></ul>
               <p>Masa oyunu prototipleri için d4'ten d20'ye kadar istenen sayıda zar atıp toplamı gösteren araç.</p>
               <p class="learned"><strong>Ne öğrendim:</strong> Bir döngüyle birden fazla rastgele sayı üretmeyi ve kullanıcı girdisini sınırlar içinde tutmayı öğrendim.</p>
-              <div class="project-links"><a class="btn btn-primary" href="projeler/zar.html">Dene</a><a class="btn btn-ghost" href="https://github.com/almpolat/almpolat.github.io/blob/main/projeler/zar.html">GitHub<span class="visually-hidden">: Zar Atıcı kaynak kodu</span></a></div>
+              <div class="project-links"><a class="btn btn-primary" href="projeler/zar.html">Dene<span class="visually-hidden">: Zar Atıcı</span></a><a class="btn btn-ghost" href="https://github.com/almpolat/almpolat.github.io/blob/main/projeler/zar.html">GitHub<span class="visually-hidden">: Zar Atıcı kaynak kodu</span></a></div>
             </div>
           </article>
           <article class="card project-card" data-category="web">
@@ -85,7 +88,7 @@
               <ul class="tags" aria-label="Kullanılan teknolojiler"><li class="tag">JavaScript</li><li class="tag">setInterval</li><li class="tag">Zaman</li></ul>
               <p>Jam süresini girince kalan zamanı saat, dakika ve saniye olarak gösteren, süre bitince uyarı veren sayaç.</p>
               <p class="learned"><strong>Ne öğrendim:</strong> Zamanlayıcılarla çalışmayı ve saniyeyi saat:dakika:saniye biçimine çevirmeyi öğrendim.</p>
-              <div class="project-links"><a class="btn btn-primary" href="projeler/geri-sayim.html">Dene</a><a class="btn btn-ghost" href="https://github.com/almpolat/almpolat.github.io/blob/main/projeler/geri-sayim.html">GitHub<span class="visually-hidden">: Game Jam Geri Sayım kaynak kodu</span></a></div>
+              <div class="project-links"><a class="btn btn-primary" href="projeler/geri-sayim.html">Dene<span class="visually-hidden">: Game Jam Geri Sayım</span></a><a class="btn btn-ghost" href="https://github.com/almpolat/almpolat.github.io/blob/main/projeler/geri-sayim.html">GitHub<span class="visually-hidden">: Game Jam Geri Sayım kaynak kodu</span></a></div>
             </div>
           </article>
       </div>
@@ -98,7 +101,6 @@
       <p>© 2026 Alimert Polat · GEP1316 Kodlama Okuryazarlığı</p>
       <ul>
         <li><a href="https://github.com/almpolat">GitHub</a></li>
-        <li><a href="mailto:alimert.polat@bahcesehir.edu.tr">E-posta</a></li>
       </ul>
     </div>
   </footer>
